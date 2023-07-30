@@ -1,0 +1,100 @@
+
+.container{
+    display: flex;
+    height: 100vh;
+    background-color: whitesmoke;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.container__left,
+.container__right{
+    flex: 1;
+}
+.left_wrapper{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.left_wrapper > h2 {
+    font-size: 4rem;
+    color:rgb(86, 35, 137);
+}
+.left_wrapper > h3 {
+    font-size: 2rem;
+}
+.left_wrapper > h4{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+.left_wrapper > p {
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.descrip{
+    height: 3.125rem;
+    overflow: hidden;
+}
+    .descrip__wrapper{
+        height: 100%;
+        animation: move 10s ease-in-out infinite alternate;
+    }
+    @keyframes move {
+        25%{
+            transform: translateY(-3.125rem);
+        }
+        50%{
+            transform: translateY(-6.2rem);
+        }
+        75%{
+            transform: translateY(-9.3rem);
+        }
+        100%{
+            transform: translateY(-12.4rem);
+        }
+    }
+.title{
+    height: 3.125rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(86, 35, 137);
+    display: flex;
+    align-items: center;
+}
+.left__btn{
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 1rem;
+    margin: 2rem 4rem;
+    background: #702963;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    }
+        .left__btn:hover{
+        cursor: pointer;
+        background:rgb(221, 117, 221);
+        transition: all 0.3s ease 0;
+        }
+/* left side of about section */
+.selfie{
+    border-radius: 4rem;
+    margin: 6rem 0 0 1rem;
+    height: 80%;
+    width: 90%;
+    object-fit: cover;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media only screen 
+and (min-width: 100px)
+and (max-width: 700px)
+and (-webkit-min-device-pixel-ratio: 2){
+    .container {
+        background-color: red;
+    }
+}
