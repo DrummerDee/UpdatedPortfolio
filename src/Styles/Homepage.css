@@ -2,7 +2,7 @@
 .container{
     display: flex;
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: black;
     padding: 10rem auto;
 }
 .container__left,
@@ -51,9 +51,9 @@
     align-items: center;
 }
 .left__btn{
-    margin: 1.5rem 4rem;
+    margin: 1.5rem 1rem;
     background: #702963;
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
     border-radius: 0.5rem;
     color: white;
     font-weight: bold;

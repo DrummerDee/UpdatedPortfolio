@@ -1,9 +1,9 @@
 import React from 'react';
-import Box from '@mui/material/Box';
+// import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-// import selfie from '../Assets/selfie.jpg';
+// import Selfie from '../Assets/Selfie.jpg';
 import '../Styles/Homepage.css';
 
 
@@ -33,13 +33,13 @@ export default function Homepage() {
                                 variant='outlined'
                                 size='medium'
                                 href='#'
-                                style={{backgroundColor:'#702963', color:'white', margin:'1.5rem 2rem'}}
+                                style={{backgroundColor:'#702963', color:'white', margin:'1.5rem 1rem 0 0'}}
                             > Meet Me </Button>
                         </div>
                     </div>
                 </section>
             </div>
-
+            {/* <Selfie/> */}
         </Container>
     )
 }
