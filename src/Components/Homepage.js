@@ -1,19 +1,19 @@
 import React from 'react';
-// import Box from '@mui/material/Box';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-// import Selfie from '../Assets/Selfie.jpg';
+import Selfie from '../Assets/Selfie.jpg';
 import '../Styles/Homepage.css';
 
 
 export default function Homepage() {
     return (
         <Container
-            maxWidth = 'xl'
+            maxWidth='xl'
             style={{ backgroundColor: 'whitesmoke', margin: '0', padding: '0' }}
         >
-            <div>
+            <div className='container'>
                 <section className='container__left'>
                     <div className="left_wrapper">
                         <Typography variant="h5"> Hello, my name is </Typography>
@@ -33,13 +33,23 @@ export default function Homepage() {
                                 variant='outlined'
                                 size='medium'
                                 href='#'
-                                style={{backgroundColor:'#702963', color:'white', margin:'1.5rem 1rem 0 0'}}
+                                style={{ backgroundColor: '#702963', color: 'white', margin: '1.5rem 1rem 0 0' }}
                             > Meet Me </Button>
                         </div>
                     </div>
                 </section>
+                <Box
+                sx={{
+
+                }}
+            >
+                <div className='container__right'>
+                    <div>
+                    <img className='selfie' src={Selfie} alt="Beautiful picture of my bald head" />
+                </div>
+                </div>
+            </Box>
             </div>
-            {/* <Selfie/> */}
         </Container>
     )
 }

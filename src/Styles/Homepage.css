@@ -1,13 +1,17 @@
-
 .container{
     display: flex;
-    height: 100vh;
-    background-color: black;
-    padding: 10rem auto;
+    flex-direction: column;
 }
 .container__left,
 .container__right{
     flex: 1;
+}
+.container__left,
+.descrip__wrapper > title{
+    text-align: center;
+}
+.descrip{
+    justify-content:center;
 }
 .left_wrapper{
     padding: 2rem;
@@ -15,11 +19,8 @@
     flex-direction: column;
 }
 .left_wrapper > h2 {
-    font-size: 4rem;
     color:rgb(86, 35, 137);
 }
-
-
 .descrip{
     height: 3.125rem;
     overflow: hidden;
@@ -51,9 +52,9 @@
     align-items: center;
 }
 .left__btn{
-    margin: 1.5rem 1rem;
+    margin: 1.5rem 1rem 0 0;
     background: #702963;
-    margin-left: 0.2rem;
+    margin-left: 1rem;
     border-radius: 0.5rem;
     color: white;
     font-weight: bold;
@@ -61,27 +62,37 @@
     }
         .left__btn:hover{
         cursor: pointer;
-        background:#bb44a6;
+        background:#f072d9;
         transition: all 0.3s ease 0;
         }
 /* left side of about section */
 .selfie{
     border-radius: 4rem;
-    margin: 6rem 0 0 1rem;
-    height: 80%;
-    width: 90%;
-    object-fit: cover;
+    margin: 0 auto;
+    width: 100%;
     
 }
 a{
     text-decoration: none;
     color: white;
 }
+
+/* mobile media queries
 @media only screen 
 and (min-width: 100px)
 and (max-width: 700px)
 and (-webkit-min-device-pixel-ratio: 2){
     .container {
-        background-color: red;
+        display:flex
+    }
+} */
+/*desktop media queries*/
+@media only screen 
+and (min-width: 700px)
+and (-webkit-min-device-pixel-ratio: 2){
+    .container__right,
+    .container__left {
+        background-color: blue;
+        flex-direction: row;
     }
 }
