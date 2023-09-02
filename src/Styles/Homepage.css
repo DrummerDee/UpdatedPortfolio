@@ -12,6 +12,10 @@
 }
 .descrip{
     justify-content:center;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
 }
 .left_wrapper{
     padding: 2rem;
